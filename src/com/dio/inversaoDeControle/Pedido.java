@@ -7,7 +7,7 @@ public class Pedido {
         pedido.gravar();
     }
 
-    private EnviarEmails enviar = EnviarEmails.obterDadosEmail();
+    private final EnviarEmails enviar = EnviarEmails.obterDadosEmail();
 
     public void gravar(){
         this.enviar.retornar("Pedido criado");
